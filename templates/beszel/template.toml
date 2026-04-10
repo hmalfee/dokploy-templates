@@ -5,10 +5,19 @@ main_domain = "${domain}"
 env = [
   "ADMIN_EMAIL=",
   "ADMIN_PASSWORD=",
+  "SMTP_HOST=",
+  "SMTP_PORT=",
+  "SMTP_USERNAME=",
+  "SMTP_PASSWORD=",
+  "SMTP_SENDER_NAME=",
+  "SMTP_SENDER_ADDRESS=",
+  "HEARTBEAT_URL=",
+  "HEARTBEAT_INTERVAL=",
+  "HEARTBEAT_METHOD=",
 ]
 
 [[config.domains]]
-serviceName = "beszel"
+serviceName = "beszel-hub"
 port        = 8090
 host        = "${main_domain}"
 path        = "/"
